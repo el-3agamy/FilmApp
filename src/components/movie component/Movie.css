@@ -1,0 +1,41 @@
+.imgContainer1{
+    width: 25%  !important;
+    transition: all 1s;
+}
+
+
+.imgContainer1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.layer{
+    display: none !important;
+    background-color:rgba(164, 28, 28, 0.7);
+    bottom:  0px;
+    left: 25px;
+    right: 25px;
+    opacity: 0;
+    transition: all 1s;
+
+    
+}
+
+.imgContainer1:hover .layer{
+        opacity: 1;
+}
+
+/* *************** */
+
+@media screen and (max-width:587px) {
+    .imgContainer1{
+       
+        width: 100% !important;
+    }
+}
+@media screen and (min-width:587px) and (max-width:998px) {
+    .imgContainer1{
+        
+        width: 33.33% !important;
+    }
+}
