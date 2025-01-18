@@ -20,7 +20,7 @@ function App() {
 
   const getMovies = async (Para)=>{
 
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=5159b3db` ;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=5159b3db` ;
     let {data} = await axios.get(url) ;
     if(data.Search){
     setMovies(data.Search)
